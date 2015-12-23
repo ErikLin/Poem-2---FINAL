@@ -1,0 +1,48 @@
+@charset "UTF-8";
+html {
+    font-size: 12pt;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -webkit-text-size-adjust: none;
+}
+
+
+/* TYPOGRAPHY */
+
+h1 {
+    color: black;
+    text-shadow: none;
+    margin: 0;
+}
+
+h2,
+section h1 {
+    color: black;
+    text-shadow: none;
+    margin: 0;
+}
+
+p {
+    color: black;
+    text-shadow: none;
+}
+
+#background,
+#backgroundimg {
+    display: none;
+}
+
+.popup {
+    display: none
+}
+
+#lyrics {
+    margin: 0;
+}

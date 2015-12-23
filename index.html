@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Runnin' (Lose It All) by NAUGHTY BOY (feat. Beyoncé and Arrow Benjamin)</title>
+    <meta name="keywords" content="lyrics, beyonce, naughty boy, arrow benjamin, music">
+    <meta name="description" content="Runnin' (Lose It All) Lyrics">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <link href="includes/style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="includes/style-print.css" rel="stylesheet" type="text/css" media="print">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,200,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <img id="backgroundimg" src="images/runnin%20screen%20shot.jpg" alt="underwatter">
+    <video id="background" autoplay muted loop poster="images/runnin%20screen%20shot.jpg">
+        <source src="images/background_full.mp4" type="video/webm">
+    </video>
+    
+    
+<!--
+    <iframe 
+            id="background" width="1920" height="1080" src="http://www.youtube.com/embed/eJSik6ejkr0?
+    &autoplay=1&rel=0&fs=0&playerapiid=ytplayer&loop=1&enablejsapi=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=eJSik6ejkr0" 
+    frameborder="0" allowfullscreen></iframe>
+-->
+
+    
+    
+    <div id="lyrics">
+        <h1>Runnin' (Lose It All)</h1>
+        <h2><span id="NB">Naughty Boy</span>
+            <br>
+            (feat. Beyoncé <span id="and">and</span> Arrow Benjamin)</h2>
+
+        <p>
+            These four lonely walls have changed the way I feel
+            <br> The way I feel, I'm standing still
+            <br> And nothing else matters now, you're not here
+            <br> So where are you? I've been calling you, I'm missing you
+            <br>
+        </p>
+
+        <p>
+            Where else can I go? Where else can I go?
+            <br> Chasing you, chasing you
+            <br> Memories turn to dust, please don't bury us
+            <br> I got you, I got you
+            <br>
+        </p>
+
+        <p>
+            Runnin', runnin', runnin', runnin'
+            <br> Runnin', runnin', runnin'
+            <br> Ain't runnin' from myself no more
+            <br> Together we'll win it all
+            <br> I ain't runnin', runnin', runnin', runnin'
+            <br> Runnin', runnin', runnin'
+            <br> Ain't runnin' from myself no more
+            <br> I'm ready to face it all
+            <br> If I lose myself, I lose it all
+            <br>
+        </p>
+
+        <p>
+            I've outrun the fears that chased, they're standing still
+            <br> I'm running still, I'm running still
+            <br> And every voice that cries inside my head, forever drives
+            <br> Forever drives, I kill the lights
+            <br>
+        </p>
+
+        <p>
+            Where else can I go? Where else can I go?
+            <br> Chasing you, chasing you
+            <br>
+        </p>
+
+        <p>
+            Runnin', runnin', runnin', runnin'
+            <br> Runnin', runnin', runnin'
+            <br> Ain't runnin' from myself no more
+            <br> Together we'll win it all
+            <br> I ain't runnin', runnin', runnin', runnin'
+            <br> Runnin', runnin', runnin'
+            <br> Ain't runnin' from myself no more
+            <br> I'm ready to face it all
+            <br> If I lose myself, I lose it all
+            <br> If I lose myself, I lose it all
+            <br> If I lose myself, I lose it all
+            <br> If I lose myself, I lose it all
+            <br>
+
+        </p>
+    </div>
+
+    <a class="button" href="#popup"><img class="info" src="images/Info-white.png" alt="info"></a>
+    <img class="volume" id="silent" onclick="unmute()" alt="sound toggle" src="images/ic_volume_off_white_48dp.png">
+    <img class="volume" id="loud" onclick="mute()" alt="sound toggle" src="images/ic_volume_up_white_48dp.png">
+
+    <img class="playpause" id="pause" onclick="playPause()" alt="play Pause toggle" src="images/ic_pause_white_48dp.png">
+    <img class="playpause" id="play" onclick="playPause()" alt="play Pause toggle" src="images/ic_play_arrow_white_24dp.png">
+
+    <div id="popup" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h3>Why?</h3>
+            <p class="explanation">I chose this piece primarily becauase the music video was so beautiful. The haunting nature of large open oceans goes very well with the tone of the song.
+                <br> (Have you tried hovering over the lyrics yet?)
+            </p>
+
+            <div class="get">
+                <a id="itunes" target="_blank" href="https://geo.itunes.apple.com/us/album/runnin-lose-it-all-feat.-beyonce/id1039999827?app=itunes" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;height:40px;"></a>
+                <a href="https://www.youtube.com/watch?v=eJSik6ejkr0" target="_blank"><img id="utube" alt="play on youtube" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Solid_color_You_Tube_logo.png/1024px-Solid_color_You_Tube_logo.png"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        
+        var v = document.getElementById("background");
+        
+        function playPause() {
+            if (v.paused){
+                v.play();
+                //v.playVideo();
+                
+            document.getElementById("play").style.visibility = "hidden";
+            document.getElementById("pause").style.visibility = "visible";}
+            else{
+                v.pause();
+                //v.pauseVideo();
+                document.getElementById("play").style.visibility = "visible";
+            document.getElementById("pause").style.visibility = "hidden";
+            }
+        }
+
+        function unmute() {
+            v.muted = false;
+            document.getElementById("silent").style.visibility = "hidden";
+            document.getElementById("loud").style.visibility = "visible";
+        }
+
+        function mute() {
+            v.muted = true;
+            document.getElementById("silent").style.visibility = "visible";
+            document.getElementById("loud").style.visibility = "hidden";
+        }
+    </script>
+
+
+</body>
+
+
+
+</html>
